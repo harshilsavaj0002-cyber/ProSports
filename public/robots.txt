@@ -1,0 +1,31 @@
+# ProSports - Robots.txt
+# This file tells search engines how to crawl and index our site
+
+# Allow all bots
+User-agent: *
+Allow: /
+
+# Specific rules for Google
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+# Specific rules for Bingbot
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# Disallow access to admin and private areas
+User-agent: *
+Disallow: /admin/
+Disallow: /private/
+Disallow: /api/
+Disallow: /.env*
+
+# Sitemap location
+Sitemap: https://prosports.com/sitemap.xml
+Sitemap: https://prosports.com/sitemap-0.xml
+
+# Cache rules
+User-agent: *
+Request-rate: 10/1s
