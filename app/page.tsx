@@ -13,7 +13,7 @@ import { TrendingUp } from 'lucide-react';
 export default function Home() {
   const [selectedCategory, setSelectedCategory] = useState('All');
   const featured = getFeaturedArticles(1)[0];
-  const latestArticles = getAllArticles().slice(0, 24);
+  const latestArticles = getAllArticles().slice(0, 8);
   const trendingArticles = getAllArticles().slice(0, 5);
   const filteredArticles = selectedCategory === 'All'
     ? latestArticles
