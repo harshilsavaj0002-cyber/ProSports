@@ -66,7 +66,7 @@ export default function PrivacyPage() {
               </p>
               <div className="mt-4 p-4 bg-card rounded-lg">
                 <p className="text-lg">ProSports</p>
-                <p className="text-lg">Email: privacy@prosports.com</p>
+                <p className="text-lg">Email: contact@sportsoffer.shop</p>
               </div>
             </section>
 
@@ -188,8 +188,8 @@ export default function PrivacyPage() {
 
   <div className="mt-4 p-4 bg-card rounded-lg">
     <p className="text-lg font-semibold">ProSports Privacy Team</p>
-    <p className="text-lg">Email: privacy@prosports.com</p>
-    <p className="text-lg">Support: support@prosports.com</p>
+    <p className="text-lg">Email: contact@sportsoffer.shop</p>
+    <p className="text-lg">Support: contact@sportsoffer.shop</p>
     <p className="text-lg">Response Time: Within 7 Business Days</p>
   </div>
 </section>

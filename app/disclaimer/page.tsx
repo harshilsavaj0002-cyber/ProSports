@@ -80,7 +80,7 @@
                 </p>
                 <div className="mt-4 p-4 bg-card rounded-lg">
                   <p className="text-lg">ProSports</p>
-                  <p className="text-lg">Email: disclaimer@prosports.com</p>
+                  <p className="text-lg">Email: contact@sportsoffer.shop</p>
                 </div>
               </section>
               

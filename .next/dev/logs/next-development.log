@@ -1,0 +1,26 @@
+{"timestamp":"00:00:00.688","source":"Server","level":"LOG","message":""}
+{"timestamp":"00:00:14.871","source":"Browser","level":"INFO","message":"%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold"}
+{"timestamp":"00:00:15.052","source":"Browser","level":"WARN","message":"AdSense head tag doesn't support data-nscript attribute."}
+{"timestamp":"00:00:15.058","source":"Server","level":"WARN","message":"[browser] \"\\u001b[33mAdSense head tag doesn't support data-nscript attribute.\\u001b[39m\" \"\\u001b[2m(https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6755991999371634:224:300)\\u001b[22m\""}
+{"timestamp":"00:00:15.058","source":"Browser","level":"WARN","message":"\u001b[33mAdSense head tag doesn't support data-nscript attribute.\u001b[39m"}
+{"timestamp":"00:00:15.096","source":"Browser","level":"WARN","message":"Image with src \"https://images.pexels.com/photos/1752757/pexels-photo-1752757.jpeg?w=1200\" was detected as the Largest Contentful Paint (LCP). Please add the `loading=\"eager\"` property if this image is above the fold.\nRead more: https://nextjs.org/docs/app/api-reference/components/image#loading"}
+{"timestamp":"00:00:15.100","source":"Server","level":"WARN","message":"[browser] \"\\u001b[33mImage with src \\\"https://images.pexels.com/photos/1752757/pexels-photo-1752757.jpeg?w=1200\\\" was detected as the Largest Contentful Paint (LCP). Please add the `loading=\\\"eager\\\"` property if this image is above the fold.\\nRead more: https://nextjs.org/docs/app/api-reference/components/image#loading\\u001b[39m\""}
+{"timestamp":"00:00:15.100","source":"Browser","level":"WARN","message":"\u001b[33mImage with src \"https://images.pexels.com/photos/1752757/pexels-photo-1752757.jpeg?w=1200\" was detected as the Largest Contentful Paint (LCP). Please add the `loading=\"eager\"` property if this image is above the fold.\nRead more: https://nextjs.org/docs/app/api-reference/components/image#loading\u001b[39m"}
+{"timestamp":"00:07:14.514","source":"Server","level":"LOG","message":"✓ Compiled in 26ms"}
+{"timestamp":"00:07:31.038","source":"Server","level":"LOG","message":"✓ Compiled in 24ms"}
+{"timestamp":"00:07:42.294","source":"Server","level":"LOG","message":"✓ Compiled in 24ms"}
+{"timestamp":"00:07:49.316","source":"Server","level":"LOG","message":"✓ Compiled in 23ms"}
+{"timestamp":"00:07:53.434","source":"Server","level":"LOG","message":"✓ Compiled in 24ms"}
+{"timestamp":"00:07:57.130","source":"Server","level":"LOG","message":"✓ Compiled in 23ms"}
+{"timestamp":"00:08:01.134","source":"Server","level":"LOG","message":"✓ Compiled in 23ms"}
+{"timestamp":"00:08:09.580","source":"Server","level":"LOG","message":"✓ Compiled in 23ms"}
+{"timestamp":"00:14:24.884","source":"Server","level":"LOG","message":"✓ Compiled in 27ms"}
+{"timestamp":"00:19:22.768","source":"Browser","level":"INFO","message":"%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold"}
+{"timestamp":"00:19:22.799","source":"Browser","level":"WARN","message":"AdSense head tag doesn't support data-nscript attribute."}
+{"timestamp":"00:19:22.800","source":"Server","level":"WARN","message":"[browser] \"\\u001b[33mAdSense head tag doesn't support data-nscript attribute.\\u001b[39m\" \"\\u001b[2m(https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6755991999371634:224:300)\\u001b[22m\""}
+{"timestamp":"00:19:22.800","source":"Browser","level":"WARN","message":"\u001b[33mAdSense head tag doesn't support data-nscript attribute.\u001b[39m"}
+{"timestamp":"00:20:33.073","source":"Server","level":"LOG","message":"✓ Compiled in 27ms"}
+{"timestamp":"00:24:35.314","source":"Server","level":"LOG","message":"✓ Compiled in 22ms"}
+{"timestamp":"00:25:11.342","source":"Server","level":"LOG","message":"✓ Compiled in 24ms"}
+{"timestamp":"00:26:43.927","source":"Server","level":"LOG","message":"✓ Compiled in 32ms"}
+{"timestamp":"00:27:00.555","source":"Server","level":"LOG","message":"✓ Compiled in 26ms"}

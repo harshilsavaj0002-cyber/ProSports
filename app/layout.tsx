@@ -13,18 +13,18 @@
 //   title: 'ProSports - Premier Sports News & Analysis',
 //   description: 'Your go-to source for breaking sports news, expert analysis, and exclusive coverage of all major sports.',
 //   keywords: ['sports news', 'basketball', 'football', 'tennis', 'soccer', 'sports analysis', 'breaking news', 'sports coverage'],
-//   metadataBase: new URL('https://prosports.com'),
+//   metadataBase: new URL('https://sportsoffer.shop'),
 //   alternates: {
-//     canonical: 'https://prosports.com',
+//     canonical: 'https://sportsoffer.shop',
 //   },
 //   openGraph: {
 //     title: 'ProSports - Premier Sports News & Analysis',
 //     description: 'Your go-to source for breaking sports news, expert analysis, and exclusive coverage of all major sports.',
-//     url: 'https://prosports.com',
+//     url: 'https://sportsoffer.shop',
 //     type: 'website',
 //     images: [
 //       {
-//         url: 'https://prosports.com/og-image.jpg',
+//         url: 'https://sportsoffer.shop/og-image.jpg',
 //         width: 1200,
 //         height: 630,
 //         alt: 'ProSports - Sports News and Analysis',
@@ -36,7 +36,7 @@
 //     card: 'summary_large_image',
 //     title: 'ProSports - Premier Sports News & Analysis',
 //     description: 'Your go-to source for breaking sports news, expert analysis, and exclusive coverage of all major sports.',
-//     images: ['https://prosports.com/og-image.jpg'],
+//     images: ['https://sportsoffer.shop/og-image.jpg'],
 //     creator: '@prosports',
 //   },
 //   icons: {

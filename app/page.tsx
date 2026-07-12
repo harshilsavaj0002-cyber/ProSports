@@ -73,11 +73,13 @@ export default function Home() {
       </p>
 
       <p>
-        Every article published on our platform is carefully
-        reviewed to ensure quality and relevance. From breaking
-        news coverage to in-depth feature stories, we are
-        committed to creating a valuable experience for sports
-        enthusiasts around the world.
+        Alongside the news, we publish plain-English explainers
+        that make sport easier to understand: how boxing's
+        10-point scoring system works, the rules of rugby union
+        and volleyball, why a marathon is 26.2 miles, how alpine
+        ski racing disciplines differ, and much more. Whether you
+        are a lifelong fan or just getting started, our guides are
+        written to be genuinely useful, accurate, and easy to read.
       </p>
     </div>
   </div>
@@ -162,59 +164,37 @@ export default function Home() {
 
 
 
-        {/* Newsletter Section */}
-        <section className="py-16 bg-card border-y border-border">
-          <div className="max-w-2xl mx-auto px-4 text-center">
-            <h2 className="text-3xl font-bold mb-4">Stay In The Game</h2>
-            <p className="text-muted-foreground mb-8">
-              Get breaking news, expert analysis, and exclusive updates delivered straight to your inbox.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-3">
-              <input
-                type="email"
-                placeholder="Enter your email"
-                className="flex-1 px-4 py-3 bg-background text-foreground rounded border border-border focus:outline-none focus:border-primary transition"
-              />
-              <button
-                className="px-6 py-3 bg-primary text-primary-foreground rounded font-bold hover:bg-primary/90 transition whitespace-nowrap"
-              >
-                Subscribe
-              </button>
-            </div>
-          </div>
-        </section>
-
         {/* Featured Tournaments Section */}
         <section className="py-16 bg-card border-b border-border">
           <div className="max-w-7xl mx-auto px-4">
             <div className="mb-8">
-              <h2 className="text-3xl font-bold mb-2">Featured Tournaments</h2>
-              <p className="text-muted-foreground">Major sporting events happening now</p>
+              <h2 className="text-3xl font-bold mb-2">Major Tournaments</h2>
+              <p className="text-muted-foreground">The biggest competitions in world sport, explained</p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
               <Link href="/tournaments" className="bg-background rounded-lg p-6 hover:shadow-lg transition">
-                <div className="text-3xl mb-3">🏀</div>
-                <h3 className="text-xl font-bold mb-2">Championship Finals</h3>
-                <p className="text-muted-foreground text-sm mb-4">Basketball - June-August</p>
-                <span className="text-primary font-semibold text-sm">View Details →</span>
+                <div className="text-3xl mb-3">⚽</div>
+                <h3 className="text-xl font-bold mb-2">FIFA World Cup</h3>
+                <p className="text-muted-foreground text-sm mb-4">Football · Every 4 years</p>
+                <span className="text-primary font-semibold text-sm">Learn More →</span>
+              </Link>
+              <Link href="/tournaments" className="bg-background rounded-lg p-6 hover:shadow-lg transition">
+                <div className="text-3xl mb-3">🏅</div>
+                <h3 className="text-xl font-bold mb-2">The Olympic Games</h3>
+                <p className="text-muted-foreground text-sm mb-4">Multi-sport · Every 4 years</p>
+                <span className="text-primary font-semibold text-sm">Learn More →</span>
               </Link>
               <Link href="/tournaments" className="bg-background rounded-lg p-6 hover:shadow-lg transition">
                 <div className="text-3xl mb-3">🎾</div>
-                <h3 className="text-xl font-bold mb-2">Grand Slam</h3>
-                <p className="text-muted-foreground text-sm mb-4">Tennis - Throughout Year</p>
-                <span className="text-primary font-semibold text-sm">View Details →</span>
+                <h3 className="text-xl font-bold mb-2">Tennis Grand Slams</h3>
+                <p className="text-muted-foreground text-sm mb-4">Tennis · Four majors a year</p>
+                <span className="text-primary font-semibold text-sm">Learn More →</span>
               </Link>
               <Link href="/tournaments" className="bg-background rounded-lg p-6 hover:shadow-lg transition">
-                <div className="text-3xl mb-3">⚽</div>
-                <h3 className="text-xl font-bold mb-2">International Cup</h3>
-                <p className="text-muted-foreground text-sm mb-4">Soccer - June-July 2025</p>
-                <span className="text-primary font-semibold text-sm">View Details →</span>
-              </Link>
-              <Link href="/tournaments" className="bg-background rounded-lg p-6 hover:shadow-lg transition">
-                <div className="text-3xl mb-3">🏈</div>
-                <h3 className="text-xl font-bold mb-2">Pro League</h3>
-                <p className="text-muted-foreground text-sm mb-4">Football - Sep-Feb 2025</p>
-                <span className="text-primary font-semibold text-sm">View Details →</span>
+                <div className="text-3xl mb-3">🏏</div>
+                <h3 className="text-xl font-bold mb-2">Cricket World Cup</h3>
+                <p className="text-muted-foreground text-sm mb-4">Cricket · Every 4 years</p>
+                <span className="text-primary font-semibold text-sm">Learn More →</span>
               </Link>
             </div>
           </div>

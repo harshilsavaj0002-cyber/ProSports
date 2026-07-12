@@ -5,7 +5,7 @@ export const metadata: Metadata = generateMetadata({
   title: 'In-Depth Stories - ProSports',
   description: 'Long-form features, athlete profiles, historical analyses, and investigative journalism from the world of sports.',
   keywords: ['sports features', 'athlete profiles', 'sports analysis', 'investigative journalism', 'long-form journalism'],
-  ogImage: 'https://prosports.com/og-stories.jpg',
+  ogImage: 'https://sportsoffer.shop/og-stories.jpg',
   ogType: 'website',
   url: '/stories',
   author: 'ProSports Team',

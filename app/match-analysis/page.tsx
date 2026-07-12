@@ -4,38 +4,21 @@ import { Header } from '@/components/header';
 import { Footer } from '@/components/footer';
 import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
+import { articles } from '@/lib/articles';
 
 export default function MatchAnalysisPage() {
-  const recentMatches = [
-    {
-      id: 1,
-      title: 'Championship Finals: Tactical Breakdown',
-      sport: 'Basketball',
-      date: '2025-06-20',
-      excerpt: 'Complete tactical analysis of the championship-winning strategy that led to victory.',
-    },
-    {
-      id: 2,
-      title: 'Record-Breaking Performance Analysis',
-      sport: 'Football',
-      date: '2025-06-18',
-      excerpt: 'Breaking down how the athlete achieved a historic performance record.',
-    },
-    {
-      id: 3,
-      title: 'Grand Slam Semifinals: Technique Review',
-      sport: 'Tennis',
-      date: '2025-06-16',
-      excerpt: 'Detailed analysis of the key moments and techniques in this thrilling match.',
-    },
-    {
-      id: 4,
-      title: 'International Tournament Finals Report',
-      sport: 'Football',
-      date: '2025-06-10',
-      excerpt: 'Comprehensive breakdown of the tournament final with tactical insights.',
-    },
-  ];
+  // Pull real, tactics-focused articles from our library so titles and links are genuine.
+  const featuredIds = ['37', '40', '10', '45', '19', '2'];
+  const recentMatches = featuredIds
+    .map((id) => articles.find((a) => a.id === id))
+    .filter((a): a is NonNullable<typeof a> => Boolean(a))
+    .map((a) => ({
+      id: a.id,
+      title: a.title,
+      sport: a.category,
+      date: a.date,
+      excerpt: a.excerpt,
+    }));
 
   return (
     <div className="min-h-screen bg-background text-foreground flex flex-col">
@@ -56,9 +39,9 @@ export default function MatchAnalysisPage() {
         <section className="py-16">
           <div className="max-w-6xl mx-auto px-4">
             <div className="mb-12">
-              <h2 className="text-3xl font-bold mb-2">Recent Match Analyses</h2>
+              <h2 className="text-3xl font-bold mb-2">Tactics &amp; Analysis</h2>
               <p className="text-muted-foreground text-lg">
-                Professional tactical breakdowns and performance analysis from our expert team
+                In-depth breakdowns of strategy, formations, and the ideas that shape the games
               </p>
             </div>
 
@@ -163,20 +146,14 @@ export default function MatchAnalysisPage() {
         {/* CTA Section */}
         <section className="py-16 bg-gradient-to-r from-primary/10 to-accent/10">
           <div className="max-w-4xl mx-auto px-4 text-center">
-            <h2 className="text-3xl font-bold mb-6">Get Expert Analysis Delivered</h2>
+            <h2 className="text-3xl font-bold mb-6">Explore More In-Depth Analysis</h2>
             <p className="text-xl text-muted-foreground mb-8">
-              Subscribe to our newsletter for in-depth match analysis and exclusive insights
+              Browse our full library of guides and explainers covering tactics, rules, and the
+              thinking behind every major sport.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <input
-                type="email"
-                placeholder="Enter your email"
-                className="px-6 py-3 bg-background text-foreground rounded border border-border focus:outline-none focus:border-primary transition"
-              />
-              <button className="px-8 py-3 bg-primary text-primary-foreground rounded font-bold hover:bg-primary/90 transition">
-                Subscribe
-              </button>
-            </div>
+            <Link href="/news" className="inline-block px-8 py-3 bg-primary text-primary-foreground rounded font-bold hover:bg-primary/90 transition">
+              Read Our Articles
+            </Link>
           </div>
         </section>
       </main>

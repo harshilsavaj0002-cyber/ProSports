@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next';
 import { articles } from '@/lib/articles';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://prosports.com';
+  const baseUrl = 'https://sportsoffer.shop';
   
   // Main pages
   const mainPages: MetadataRoute.Sitemap = [

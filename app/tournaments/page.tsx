@@ -8,35 +8,35 @@ export default function TournamentsPage() {
   const tournaments = [
     {
       id: 1,
-      name: 'Championship Series Finals',
-      sport: 'Basketball',
-      format: 'Best-of-7 Series',
-      prizePool: '$50 Million',
-      dates: 'June - August 2025',
+      name: 'FIFA World Cup',
+      sport: 'Football',
+      format: 'Group Stage + Knockout',
+      frequency: 'Every 4 years',
+      about: 'The biggest event in football, contested by national teams that qualify through regional competitions.',
     },
     {
       id: 2,
-      name: 'Grand Slam Tournament',
-      sport: 'Tennis',
-      format: 'Single Elimination',
-      prizePool: '$75 Million',
-      dates: 'Throughout Year',
+      name: 'The Olympic Games',
+      sport: 'Multi-Sport',
+      format: 'Varies by event',
+      frequency: 'Every 4 years',
+      about: 'The foremost multi-sport competition in the world, bringing together athletes across dozens of disciplines.',
     },
     {
       id: 3,
-      name: 'International Cup',
-      sport: 'Soccer',
-      format: 'Group Stage + Knockout',
-      prizePool: '$100 Million',
-      dates: 'June-July 2025',
+      name: 'The Tennis Grand Slams',
+      sport: 'Tennis',
+      format: 'Single Elimination',
+      frequency: 'Four majors each year',
+      about: 'The Australian Open, French Open, Wimbledon, and US Open, the four most prestigious tournaments in tennis.',
     },
     {
       id: 4,
-      name: 'Professional League',
-      sport: 'Football',
-      format: '16-Week Regular Season',
-      prizePool: '$40 Million',
-      dates: 'September - February',
+      name: 'The Cricket World Cup',
+      sport: 'Cricket',
+      format: 'Group Stage + Knockout',
+      frequency: 'Every 4 years',
+      about: 'The premier one-day international tournament, crowning the world champions of cricket.',
     },
   ];
 
@@ -59,9 +59,9 @@ export default function TournamentsPage() {
         <section className="py-16">
           <div className="max-w-6xl mx-auto px-4">
             <div className="mb-12">
-              <h2 className="text-3xl font-bold mb-2">Featured Tournaments</h2>
+              <h2 className="text-3xl font-bold mb-2">The World&apos;s Premier Competitions</h2>
               <p className="text-muted-foreground text-lg">
-                Upcoming major events you won't want to miss
+                A look at some of the most important tournaments in global sport and how they work
               </p>
             </div>
 
@@ -82,8 +82,8 @@ export default function TournamentsPage() {
                     <div className="flex items-center gap-3">
                       <Calendar className="w-5 h-5 text-muted-foreground flex-shrink-0" />
                       <div>
-                        <p className="text-sm text-muted-foreground">Dates</p>
-                        <p className="font-semibold">{tournament.dates}</p>
+                        <p className="text-sm text-muted-foreground">Frequency</p>
+                        <p className="font-semibold">{tournament.frequency}</p>
                       </div>
                     </div>
                     <div className="flex items-center gap-3">
@@ -94,14 +94,10 @@ export default function TournamentsPage() {
                       </div>
                     </div>
                     <div>
-                      <p className="text-sm text-muted-foreground">Prize Pool</p>
-                      <p className="text-xl font-bold text-primary">{tournament.prizePool}</p>
+                      <p className="text-sm text-muted-foreground mb-1">About</p>
+                      <p className="text-muted-foreground">{tournament.about}</p>
                     </div>
                   </div>
-
-                  <button className="w-full mt-6 px-4 py-2 bg-primary text-primary-foreground rounded font-semibold hover:bg-primary/90 transition">
-                    View Details
-                  </button>
                 </div>
               ))}
             </div>
@@ -225,20 +221,14 @@ export default function TournamentsPage() {
         {/* CTA */}
         <section className="py-16">
           <div className="max-w-4xl mx-auto px-4 text-center">
-            <h2 className="text-3xl font-bold mb-6">Stay Updated on Tournament News</h2>
+            <h2 className="text-3xl font-bold mb-6">Read More Tournament Coverage</h2>
             <p className="text-xl text-muted-foreground mb-8">
-              Get live updates, schedules, and results from all major tournaments
+              Explore our in-depth guides and articles explaining how the world&apos;s biggest
+              competitions are structured and decided.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <input
-                type="email"
-                placeholder="Enter your email"
-                className="px-6 py-3 bg-card text-foreground rounded border border-border focus:outline-none focus:border-primary transition"
-              />
-              <button className="px-8 py-3 bg-primary text-primary-foreground rounded font-bold hover:bg-primary/90 transition">
-                Subscribe
-              </button>
-            </div>
+            <a href="/news" className="inline-block px-8 py-3 bg-primary text-primary-foreground rounded font-bold hover:bg-primary/90 transition">
+              Read Our Articles
+            </a>
           </div>
         </section>
       </main>

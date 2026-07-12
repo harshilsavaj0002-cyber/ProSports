@@ -278,38 +278,6 @@ import {
           
 
 
-{/* Newsletter */}
-<section className="py-20 bg-card border-t border-border">
-  <div className="max-w-3xl mx-auto px-4 text-center">
-
-    <h2 className="text-4xl font-bold mb-4">
-      Stay Ahead of the Game
-    </h2>
-
-    <p className="text-muted-foreground text-lg mb-8">
-      Get breaking sports news, expert analysis, and exclusive stories
-      delivered directly to your inbox.
-    </p>
-
-    <div className="flex flex-col sm:flex-row gap-4 max-w-xl mx-auto">
-      <input
-        type="email"
-        placeholder="Enter your email address"
-        className="flex-1 px-5 py-4 bg-background border border-border rounded-lg focus:outline-none focus:border-primary"
-      />
-
-      <button
-        className="px-8 py-4 bg-primary text-primary-foreground rounded-lg font-semibold hover:bg-primary/90 transition"
-      >
-        Subscribe
-      </button>
-    </div>
-
-    <p className="text-xs text-muted-foreground mt-4">
-      No spam. Unsubscribe anytime.
-    </p>
-  </div>
-</section>
         </main>
 
         <Footer />

@@ -13,7 +13,7 @@ export interface SEOMetadata {
 }
 
 export function generateMetadata(seo: SEOMetadata): Metadata {
-  const baseUrl = 'https://prosports.com';
+  const baseUrl = 'https://sportsoffer.shop';
   const url = `${baseUrl}${seo.url}`;
 
   return {
@@ -67,5 +67,5 @@ export function generateJsonLd(type: string, data: any): string {
 }
 
 export const SITE_NAME = 'ProSports';
-export const SITE_URL = 'https://prosports.com';
+export const SITE_URL = 'https://sportsoffer.shop';
 export const SITE_DESCRIPTION = 'Your go-to source for breaking sports news, expert analysis, and exclusive coverage of all major sports.';

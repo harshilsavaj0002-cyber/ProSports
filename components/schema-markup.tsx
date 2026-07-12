@@ -3,17 +3,12 @@ export function OrganizationSchema() {
     '@context': 'https://schema.org',
     '@type': 'Organization',
     name: 'ProSports',
-    url: 'https://prosports.com',
-    logo: 'https://prosports.com/logo.png',
-    description: 'Your go-to source for breaking sports news, expert analysis, and exclusive coverage of all major sports.',
-    sameAs: [
-      'https://twitter.com/prosports',
-      'https://facebook.com/prosports',
-      'https://instagram.com/prosports',
-    ],
+    url: 'https://sportsoffer.shop',
+    logo: 'https://sportsoffer.shop/logo.png',
+    description: 'Your go-to source for sports news, expert analysis, and in-depth guides across all major sports.',
     contactPoint: {
       '@type': 'ContactPoint',
-      telephone: '+1-800-555-1234',
+      email: 'contact@sportsoffer.shop',
       contactType: 'Customer Service',
     },
   };
@@ -58,7 +53,7 @@ export function NewsArticleSchema({
       name: 'ProSports',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://prosports.com/logo.png',
+        url: 'https://sportsoffer.shop/logo.png',
       },
     },
   };
@@ -76,12 +71,12 @@ export function WebSiteSchema() {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
     name: 'ProSports',
-    url: 'https://prosports.com',
+    url: 'https://sportsoffer.shop',
     potentialAction: {
       '@type': 'SearchAction',
       target: {
         '@type': 'EntryPoint',
-        urlTemplate: 'https://prosports.com/search?q={search_term_string}',
+        urlTemplate: 'https://sportsoffer.shop/search?q={search_term_string}',
       },
       'query-input': 'required name=search_term_string',
     },

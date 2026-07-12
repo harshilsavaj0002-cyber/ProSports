@@ -112,31 +112,6 @@ return ( <div className="min-h-screen bg-background text-foreground flex flex-co
       </div>
     </section>
 
-    {/* Newsletter */}
-    <section className="py-20 border-t border-border">
-      <div className="max-w-2xl mx-auto px-4 text-center">
-        <h2 className="text-3xl font-bold mb-4">
-          Subscribe for Daily Sports Updates
-        </h2>
-
-        <p className="text-muted-foreground mb-8">
-          Receive breaking news, expert analysis, and exclusive sports
-          stories directly in your inbox.
-        </p>
-
-        <div className="flex flex-col sm:flex-row gap-3">
-          <input
-            type="email"
-            placeholder="Enter your email"
-            className="flex-1 px-4 py-3 rounded border border-border bg-card"
-          />
-
-          <button className="px-6 py-3 bg-primary text-white rounded">
-            Subscribe
-          </button>
-        </div>
-      </div>
-    </section>
   </main>
 
   <Footer />

@@ -2,7 +2,7 @@
 
 import { Header } from '@/components/header';
 import { Footer } from '@/components/footer';
-import { Mail, Phone, MapPin, MessageSquare } from 'lucide-react';
+import { Mail, MessageSquare } from 'lucide-react';
 import { useState } from 'react';
 import { FAQSchema } from '@/components/schema-markup';
 
@@ -34,7 +34,7 @@ export default function ContactPage() {
     },
     {
       question: 'How can I submit a story tip?',
-      answer: 'You can submit story tips through this contact form by selecting "Story Tip" as the subject, or email us directly at tips@prosports.com.',
+      answer: 'You can submit story tips through this contact form by selecting "Story Tip" as the subject, or email us directly at contact@sportsoffer.shop.',
     },
     {
       question: 'Do you accept advertising?',
@@ -42,7 +42,7 @@ export default function ContactPage() {
     },
     {
       question: 'Can I apply for a job at ProSports?',
-      answer: 'We\'re always looking for talented writers, editors, and producers. Email your resume to careers@prosports.com.',
+      answer: 'We\'re always looking for talented writers, editors, and producers. Email your resume to contact@sportsoffer.shop.',
     },
   ];
 
@@ -71,37 +71,35 @@ export default function ContactPage() {
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
                   <Mail className="w-6 h-6 text-primary" />
                 </div>
-                <h3 className="text-xl font-bold mb-2">Email</h3>
-                <p className="text-muted-foreground mb-4">Send us an email and we&apos;ll respond within 24 hours.</p>
-                <a href="mailto:hello@prosports.com" className="text-primary font-semibold hover:text-primary/80 transition">
-                  hello@prosports.com
+                <h3 className="text-xl font-bold mb-2">Email Us</h3>
+                <p className="text-muted-foreground mb-4">Send us an email and we&apos;ll respond within 24 business hours.</p>
+                <a href="mailto:contact@sportsoffer.shop" className="text-primary font-semibold hover:text-primary/80 transition">
+                  contact@sportsoffer.shop
                 </a>
               </div>
 
               {/* Contact Info Card 2 */}
               <div className="bg-card rounded-lg p-8 border border-border hover:shadow-lg transition">
                 <div className="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center mb-4">
-                  <Phone className="w-6 h-6 text-accent" />
+                  <MessageSquare className="w-6 h-6 text-accent" />
                 </div>
-                <h3 className="text-xl font-bold mb-2">Phone</h3>
-                <p className="text-muted-foreground mb-4">Call us during business hours (9 AM - 6 PM EST).</p>
-                <a href="tel:+18005551234" className="text-accent font-semibold hover:text-accent/80 transition">
-                  +1 (800) 555-1234
+                <h3 className="text-xl font-bold mb-2">Story Tips &amp; Feedback</h3>
+                <p className="text-muted-foreground mb-4">Have a tip, correction, or feedback on our coverage? We&apos;d love to hear it.</p>
+                <a href="mailto:contact@sportsoffer.shop" className="text-accent font-semibold hover:text-accent/80 transition">
+                  contact@sportsoffer.shop
                 </a>
               </div>
 
               {/* Contact Info Card 3 */}
               <div className="bg-card rounded-lg p-8 border border-border hover:shadow-lg transition">
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
-                  <MapPin className="w-6 h-6 text-primary" />
+                  <Mail className="w-6 h-6 text-primary" />
                 </div>
-                <h3 className="text-xl font-bold mb-2">Office</h3>
-                <p className="text-muted-foreground mb-4">Visit us at our headquarters.</p>
-                <address className="text-primary font-semibold not-italic">
-                  123 Sports Avenue<br />
-                  New York, NY 10001<br />
-                  USA
-                </address>
+                <h3 className="text-xl font-bold mb-2">Advertising &amp; Partnerships</h3>
+                <p className="text-muted-foreground mb-4">For advertising, sponsorship, or partnership inquiries, get in touch.</p>
+                <a href="mailto:contact@sportsoffer.shop" className="text-primary font-semibold hover:text-primary/80 transition">
+                  contact@sportsoffer.shop
+                </a>
               </div>
             </div>
 
@@ -209,7 +207,7 @@ export default function ContactPage() {
                       How can I submit a story tip?
                     </h3>
                     <p className="text-muted-foreground">
-                      You can submit story tips through this contact form by selecting &quot;Story Tip&quot; as the subject, or email us directly at tips@prosports.com.
+                      You can submit story tips through this contact form by selecting &quot;Story Tip&quot; as the subject, or email us directly at contact@sportsoffer.shop.
                     </p>
                   </div>
 
@@ -229,7 +227,7 @@ export default function ContactPage() {
                       Can I apply for a job at ProSports?
                     </h3>
                     <p className="text-muted-foreground">
-                      We&apos;re always looking for talented writers, editors, and producers. Email your resume to careers@prosports.com.
+                      We&apos;re always looking for talented writers, editors, and producers. Email your resume to contact@sportsoffer.shop.
                     </p>
                   </div>
                 </div>
@@ -238,25 +236,6 @@ export default function ContactPage() {
           </div>
         </section>
 
-        {/* Newsletter Section */}
-        <section className="py-16 bg-card border-y border-border">
-          <div className="max-w-2xl mx-auto px-4 text-center">
-            <h2 className="text-3xl font-bold mb-4">Stay Connected</h2>
-            <p className="text-muted-foreground mb-8 text-lg">
-              Subscribe to our newsletter for weekly sports insights and exclusive content.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-3">
-              <input
-                type="email"
-                placeholder="Enter your email"
-                className="flex-1 px-4 py-3 bg-background text-foreground rounded border border-border focus:outline-none focus:border-primary transition"
-              />
-              <button className="px-6 py-3 bg-primary text-primary-foreground rounded font-bold hover:bg-primary/90 transition whitespace-nowrap">
-                Subscribe
-              </button>
-            </div>
-          </div>
-        </section>
       </main>
 
       <Footer />
