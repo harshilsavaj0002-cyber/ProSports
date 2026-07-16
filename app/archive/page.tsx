@@ -1,7 +1,15 @@
     import Link from "next/link";
+import type { Metadata } from "next";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import { articles } from "@/lib/articles";
+
+export const metadata: Metadata = {
+  title: "Article Archive",
+  description:
+    "Browse the full ProSports archive of sports articles, guides, and analysis organised by month.",
+  alternates: { canonical: "/archive" },
+};
 
     export default function ArchivePage() {
     const groupedArticles = articles.reduce((acc, article) => {

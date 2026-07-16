@@ -1,5 +1,13 @@
+import type { Metadata } from "next";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
+
+export const metadata: Metadata = {
+  title: "Our Mission",
+  description:
+    "The mission behind ProSports: to make sport easier to understand with clear, accurate guides, analysis, and news for fans of every level.",
+  alternates: { canonical: "/our-mission" },
+};
 
 export default function OurMissionPage() {
   return (

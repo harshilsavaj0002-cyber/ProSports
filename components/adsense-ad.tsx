@@ -16,13 +16,15 @@ export function AdSenseAd({
   responsive = true,
 }: AdSenseAdProps) {
   useEffect(() => {
-    // Initialize Google AdSense when the component mounts
+    // The AdSense script is loaded once globally in app/layout.tsx.
+    // Here we just request an ad fill for this <ins> slot.
     if (typeof window !== 'undefined') {
-      const script = window.document.createElement('script');
-      script.async = true;
-      script.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-xxxxxxxxxxxxxxxx';
-      script.crossOrigin = 'anonymous';
-      window.document.body.appendChild(script);
+      try {
+        // @ts-expect-error - adsbygoogle is injected by the global AdSense script
+        (window.adsbygoogle = window.adsbygoogle || []).push({});
+      } catch {
+        // ignore: ad slot may already be filled
+      }
     }
   }, []);
 
@@ -35,7 +37,7 @@ export function AdSenseAd({
           textAlign: 'center',
           margin: '1.5rem auto',
         }}
-        data-ad-client="ca-pub-xxxxxxxxxxxxxxxx"
+        data-ad-client="ca-pub-6755991999371634"
         data-ad-slot={adSlot}
         data-ad-format={adFormat}
         data-full-width-responsive={responsive.toString()}
@@ -62,7 +64,7 @@ export function AdSenseVertical({ adSlot }: { adSlot: string }) {
           maxWidth: '336px',
           margin: '1rem auto',
         }}
-        data-ad-client="ca-pub-xxxxxxxxxxxxxxxx"
+        data-ad-client="ca-pub-6755991999371634"
         data-ad-slot={adSlot}
         data-ad-format="vertical"
       />
@@ -81,7 +83,7 @@ export function AdSenseHorizontal({ adSlot }: { adSlot: string }) {
           minHeight: '90px',
           margin: '1rem 0',
         }}
-        data-ad-client="ca-pub-xxxxxxxxxxxxxxxx"
+        data-ad-client="ca-pub-6755991999371634"
         data-ad-slot={adSlot}
         data-ad-format="horizontal"
       />

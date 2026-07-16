@@ -31,7 +31,7 @@ import {
   }
 
   return generateSEOMetadata({
-    title: `${article.title} - ProSports`,
+    title: article.title,
     description: article.excerpt,
     keywords: [article.category, 'sports', 'article', 'news'],
     ogImage: article.image,
@@ -146,30 +146,6 @@ import {
                   />
                 </div>
 
-
-{/* Table of Contents */}
-<div className="mb-8 p-6 bg-card rounded-xl border border-border">
-  <h2 className="text-xl font-bold mb-4">Table of Contents</h2>
-  <ul className="space-y-2">
-    <li>Overview</li>
-    <li>Analysis</li>
-    <li>Impact</li>
-    <li>Conclusion</li>
-  </ul>
-</div>
-
-                <div className="mb-8 p-6 bg-card rounded-xl border border-border">
-  <h2 className="text-xl font-bold mb-4">
-    Key Highlights
-  </h2>
-
-  <ul className="list-disc pl-6 space-y-2">
-    <li>World record attempt nearly failed at mile 23.</li>
-    <li>Coach's tactical decision prevented collapse.</li>
-    <li>Record secured by just four seconds.</li>
-  </ul>
-</div>
-
                 <div className="text-lg text-foreground leading-relaxed space-y-6">
     {article.content.split('\n\n').map((paragraph, idx) => (
       <p key={idx}>{paragraph}</p>
@@ -201,18 +177,8 @@ import {
   </div>
 
             <section className="mt-12 border-t border-border pt-8">
-    <h3 className="text-2xl font-bold mb-4">
-      Sources
-    </h3>
-
-    <ul className="list-disc pl-6 text-muted-foreground">
-      <li>Official sporting event data</li>
-      <li>Post-event interviews</li>
-      <li>Sports federation records</li>
-    </ul>
-
     {/* Tags */}
-<div className="mt-8">
+<div>
   <h3 className="text-xl font-bold mb-4">
     Tags
   </h3>

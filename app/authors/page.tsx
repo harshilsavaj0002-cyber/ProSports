@@ -1,6 +1,14 @@
 import Image from "next/image";
+import type { Metadata } from "next";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
+
+export const metadata: Metadata = {
+  title: "Our Authors",
+  description:
+    "Meet the ProSports writers and analysts covering athletics, football, basketball, tennis and more.",
+  alternates: { canonical: "/authors" },
+};
 
 const authors = [
 {
